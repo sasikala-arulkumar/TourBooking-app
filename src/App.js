@@ -13,7 +13,6 @@ import Success from './pages/Success';
 import Wishlist from './pages/WishList';
 import PaymentForm from './components/PaymentForm';
 import BookingConfirmation from './pages/BookingConfirmation';
-import api from "./api/Posts";
 
 import AdminDashboard from "./components/Admin/Dashboard";
 import AdminLogin from "./components/Admin/Login";

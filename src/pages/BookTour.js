@@ -14,7 +14,7 @@ const BookTour = () => {
   const [form, setForm] = useState({ date: '', people: '' });
   const navigate = useNavigate();
   const [bookingSuccess, setBookingSuccess] = useState(false);
-const [calculatedPrice, setCalculatedPrice] = useState(null);
+  const [calculatedPrice, setCalculatedPrice] = useState(null);
 
   const user = JSON.parse(localStorage.getItem('user'));
 

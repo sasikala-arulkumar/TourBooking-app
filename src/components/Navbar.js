@@ -1,115 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import { Link, NavLink, useNavigate } from 'react-router-dom';
-// import Logout from './LogOut'; // ✅ Import your new component
-// import './Navbar.css';
-
-// const Navbar = () => {
-//   const [username, setUsername] = useState('');
-//   const navigate = useNavigate();
-
-//   useEffect(() => {
-//     const user = JSON.parse(localStorage.getItem('user'));
-//     if (user && user.name) {
-//       setUsername(user.name);
-//     }
-//   }, []);
-
-//   // Update state when logout is called
-//   const handleLogoutState = () => {
-//     setUsername('');
-//   };
-
-//   return (
-//     <nav className="navbar">
-//       <div className="logo">
-//         <Link to="/">Tour Booking</Link>
-//       </div>
-//       <ul className="nav-links">
-//         <li><Link to="/tours">Tours</Link></li>
-//         <li><Link to="/mybookings">My Bookings</Link></li>
-
-//         {!username ? (
-//           <>
-//             <li><Link to="/signup">Signup</Link></li>
-//             <li><Link to="/login">Login</Link></li>
-//             <li className='admin'><NavLink to="/admin">Admin</NavLink></li>
-//           </>
-//         ) : (
-//           <>
-//             <li className="welcome-text">Welcome, <strong>{username}</strong></li>
-//             <li><Logout onLogout={handleLogoutState} /></li> {/* ✅ Use separate Logout */}
-//           </>
-//         )}
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-// import React, { useEffect, useState } from 'react';
-// import { Link, NavLink } from 'react-router-dom';
-// import Logout from './LogOut';
-// import './Navbar.css';
-
-// const Navbar = () => {
-//   const [username, setUsername] = useState('');
-//   const [menuOpen, setMenuOpen] = useState(false); // ✅ Track menu state
-
-//   useEffect(() => {
-//     const user = JSON.parse(localStorage.getItem('user'));
-//     if (user && user.name) {
-//       setUsername(user.name);
-//     }
-//   }, []);
-
-//   const handleLogoutState = () => {
-//     setUsername('');
-//     setMenuOpen(false); // Close menu on logout
-//   };
-
-//   return (
-//     <nav className="navbar">
-//       <div className="logo">
-//         <Link to="/">Tour Booking</Link>
-//       </div>
-
-//       {/* Hamburger Menu Button */}
-//       <button
-//         className="menu-toggle"
-//         onClick={() => setMenuOpen(!menuOpen)}
-//       >
-//         ☰
-//       </button>
-
-//       {/* Menu Links */}
-//       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-//         <li><Link to="/tours" onClick={() => setMenuOpen(false)}>Tours</Link></li>
-//         <li><Link to="/mybookings" onClick={() => setMenuOpen(false)}>My Bookings</Link></li>
-
-//         {!username ? (
-//           <>
-//             <li><Link to="/signup" onClick={() => setMenuOpen(false)}>Signup</Link></li>
-//             <li><Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link></li>
-//             <li className="admin">
-//               <NavLink to="/admin" onClick={() => setMenuOpen(false)}>Admin</NavLink>
-//             </li>
-//           </>
-//         ) : (
-//           <>
-//             <li className="welcome-text">
-//               Welcome, <strong>{username}</strong>
-//             </li>
-//             <li>
-//               <Logout onLogout={handleLogoutState} />
-//             </li>
-//           </>
-//         )}
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logout from './LogOut';
@@ -118,13 +6,6 @@ import './Navbar.css';
 const Navbar = () => {
   const [username, setUsername] = useState('');
   const [menuOpen, setMenuOpen] = useState(false); // ✅ Track menu state
-
-  // useEffect(() => {
-  //   const user = JSON.parse(localStorage.getItem('user'));
-  //   if (user && user.name) {
-  //     setUsername(user.name);
-  //   }
-  // }, []);
 
   useEffect(() => {
   const updateUser = () => {
@@ -177,9 +58,6 @@ const Navbar = () => {
           <>
             <li><Link to="/signup" onClick={() => setMenuOpen(false)}>Signup</Link></li>
             <li><Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link></li>
-            {/* <li className="admin">
-              <NavLink to="/admin" onClick={() => setMenuOpen(false)}>Admin</NavLink>
-            </li> */}
           </>
         ) : (
           <>
