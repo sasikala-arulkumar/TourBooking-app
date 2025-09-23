@@ -1,0 +1,116 @@
+/* TOUR CARD CONTAINER */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Exile&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.tour-card {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.tour-card h3{
+  position: absolute;
+  top:0;
+  left: 150px;
+  color: rgb(44, 1, 40);
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+.tour-card:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGE */
+.tour-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY: HIDDEN INITIALLY */
+.tour-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* SHOW OVERLAY ON HOVER */
+.tour-card:hover .tour-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* BUTTONS */
+.details-btn,
+.book-btn {
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.details-btn::after,
+.book-btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: 0;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.details-btn:hover::after,
+.book-btn:hover::after {
+  left: 0;
+}
+
+.details-btn:hover,
+.book-btn:hover {
+  color: black;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+  transition: transform 0.2s ease;
+  color: black;
+}
+
+.wishlist-icon:hover {
+  transform: scale(1.2);
+}
+
+.tour-card {
+  position: relative;
+  /* ...your other styles */
+}
+/* .wishlist-icon {
+  border: 1px solid red;
+  background: yellow;
+} */

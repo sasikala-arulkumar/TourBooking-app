@@ -1,0 +1,75 @@
+/* Container for the video section */
+.home-video-section {
+  position: relative;
+  height:87vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background video styling */
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay content (text/button) */
+.home-video-overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+}
+
+/* Main heading */
+.home-video-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Subtext */
+.home-video-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Optional CTA button */
+.home-video-overlay .btn-book {
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff6b00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home-video-overlay .btn-book:hover {
+  background-color: #e65c00;
+}
+
+/* Responsive text scaling */
+@media (max-width: 768px) {
+  .home-video-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .home-video-overlay p {
+    font-size: 1rem;
+  }
+}

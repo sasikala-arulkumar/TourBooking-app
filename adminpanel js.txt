@@ -1,0 +1,69 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import './AdminPanel.css';
+import TourForm from './TourForm';
+
+const AdminPanel = () => {
+  const [tours, setTours] = useState([]);
+  const [editingTour, setEditingTour] = useState(null);
+  console.log('AdminPanel loaded');
+
+  useEffect(() => {
+    fetchTours();
+  }, []);
+
+  const fetchTours = async () => {
+    const res = await axios.get('http://localhost:3500/tours');
+    setTours(res.data);
+  };
+
+  const handleDelete = async (id) => {
+    if (window.confirm('Delete this tour?')) {
+      await axios.delete(`http://localhost:3500/tours/${id}`);
+      fetchTours();
+    }
+  };
+
+  const handleEdit = (tour) => {
+    setEditingTour(tour);
+  };
+console.log("TourForm Component Type:", typeof TourForm);
+console.log("TourForm Content:", TourForm);
+
+  return (
+    <div className="admin-container">
+      <h2>Admin Panel - Manage Tours</h2>
+      <TourForm tour={editingTour} onSave={() => { fetchTours(); setEditingTour(null); }} />
+
+      <table className="admin-table">
+        <thead>
+          <tr>
+            <th>Tour</th>
+            <th>Location</th>
+            <th>Price</th>
+            <th>Days</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tours.map(tour => (
+            <tr key={tour.id}>
+              <td>{tour.name}</td>
+              <td>{tour.location}</td>
+              <td>{tour.price}</td>
+              <td>{tour.days}</td>
+              <td>
+                <button onClick={() => handleEdit(tour)}>✏️ Edit</button>
+                <button onClick={() => handleDelete(tour.id)}>🗑️ Delete</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default AdminPanel;
+
+

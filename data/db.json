@@ -1,0 +1,538 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "sasikala",
+      "email": "sasi123@gmail.com",
+      "password": "8778171043"
+    },
+    {
+      "id": "u2",
+      "username": "sasiarul",
+      "email": "sasiarulk18@gmail.com",
+      "password": "sasikala"
+    }
+  ],
+  "tours": [
+    {
+      "id": "1",
+      "name": "Goa Tour Packages",
+      "location": "Goa",
+      "price": "20000",
+      "image": "https://www.indiantempletour.com/wp-content/uploads/2016/08/kerala-goa.jpg",
+      "description": "Goa is a land that redefines holidays, with its exquisite mix of sun, surf, and beaches; Goa has become the ultimate tourist destination.",
+      "stayDays": 3,
+      "places": [
+        {
+          "name": "Clangute beach",
+          "image": "/images/calangute.jpeg"
+        },
+        {
+          "name": "Dudhsagar falls",
+          "image": "/images/dudhsagar.jpeg"
+        },
+        {
+          "name": "Fontainha",
+          "image": "/images/fontainhas.jpeg"
+        },
+        {
+          "name": "Island",
+          "image": "/images/island.jpeg"
+        },
+        {
+          "name": "Triple Deck Cruise",
+          "image": "/images/cruise.avif"
+        }
+      ],
+      "days": ""
+    },
+    {
+      "id": "2",
+      "name": "Manali Tour Packages",
+      "location": "Manali",
+      "price": 12000,
+      "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/10/Cover13.jpg",
+      "description": "Manali is a beautiful hill station in Himachal Pradesh, India. It is surrounded by snow-covered mountains, green valleys, and the flowing Beas River.",
+      "stayDays": 4,
+      "places": [
+        {
+          "name": "Gulaba",
+          "image": "/images/Gulaba.jpg"
+        },
+        {
+          "name": "Johini falls",
+          "image": "/images/johinifalls.jpg"
+        },
+        {
+          "name": "Nehru Kund",
+          "image": "/images/nehrukund.jpg"
+        },
+        {
+          "name": "Kothi village",
+          "image": "/images/kothi.png"
+        },
+        {
+          "name": "Solang Valley",
+          "image": "/images/SolangValley.jpg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Alleppey Tour Packages",
+      "location": "Alleppey",
+      "price": 10000,
+      "image": "https://media1.thrillophilia.com/filestore/rzptiv0fytiylcz3ql1cexccyxt6_1jarm970sevdzi7ahaw0xl1m6eic_shutterstock_1238920744.webp",
+      "description": "The charm of Alappuzha is the backwaters. Begin with a cruise and explore the pristine beauty of this land. Look for the paddy fields and heritage structures. ",
+      "stayDays": 3,
+      "places": [
+        {
+          "name": "Houseboat",
+          "image": "/images/houseboat.jpg"
+        },
+        {
+          "name": "Kayaking",
+          "image": "/images/kayaking.jpeg"
+        },
+        {
+          "name": "Light House",
+          "image": "/images/lighthouse.jpeg"
+        },
+        {
+          "name": "Punnamada",
+          "image": "/images/punnamada.jpeg"
+        },
+        {
+          "name": "Coir museum",
+          "image": "/images/coirmuseum.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Gulmarg Tour Packages",
+      "location": "Gulmarg",
+      "price": 25000,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.h7FHm_9rCagaYHLs5aGkqQHaE8?pid=Api&P=0&h=220",
+      "description": "Gulmarg is located in the Baramulla district of Jammu and Kashmir. Situated on an altitude of almost 9000 feet above sea level, Gulmarg is known for its scenic beauty, meadows and valleys, Winter Sports, Gondola and Spiritual places.",
+      "stayDays": 4,
+      "places": [
+        {
+          "name": "AruValley",
+          "image": "/images/aruvalley.jpeg"
+        },
+        {
+          "name": "Gulmarg",
+          "image": "/images/gulmarg.jpeg"
+        },
+        {
+          "name": "Sonamarg",
+          "image": "/images/sonamarg.jpeg"
+        },
+        {
+          "name": "Srinagar",
+          "image": "/images/srinagar.jpeg"
+        },
+        {
+          "name": "Tulip Garden",
+          "image": "/images/tulip.webp"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Mysore Tour Packages",
+      "location": "Mysore",
+      "price": 8000,
+      "image": "https://tse3.mm.bing.net/th?id=OIP.ZeMoI3umYMhjJuMUngMJOQHaE8&pid=Api&P=0&h=220",
+      "description": "Mysuru, is one of the most important places in the country regarding ancient reigns. It is replete with the history of its dazzling royal heritage, intricate architecture, its famed silk sarees",
+      "stayDays": 2,
+      "places": [
+        {
+          "name": "Mysore Palace",
+          "image": "/images/mysorepalace.jpeg"
+        },
+        {
+          "name": "Temple",
+          "image": "/images/temple.jpeg"
+        },
+        {
+          "name": "Zoo",
+          "image": "/images/zoo.jpeg"
+        },
+        {
+          "name": "Brindhavan gardens",
+          "image": "/images/brindavan.jpeg"
+        },
+        {
+          "name": "Shivanasamuthra falls",
+          "image": "/images/shivan.avif"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Agra tours",
+      "location": "Agra",
+      "price": 15000,
+      "image": "https://tse4.mm.bing.net/th?id=OIP.WXSkN9Hs0zF6sdwz5pnL5AHaEK&pid=Api&P=0&h=220",
+      "description": "From the iconic Taj Mahal to offbeat spots like Akbar's tomb and Baby Taj, this complete guide covers all the best places to visit in Agra..",
+      "stayDays": 3,
+      "places": [
+        {
+          "name": "TajMahal",
+          "image": "/images/tajmahal.jpeg"
+        },
+        {
+          "name": "Akbar's Tomb",
+          "image": "/images/akbar.jpeg"
+        },
+        {
+          "name": "Jama Masjid",
+          "image": "/images/jamamasjid.jpeg"
+        },
+        {
+          "name": "Agra Fort",
+          "image": "/images/redfort.jpeg"
+        },
+        {
+          "name": "Ranthambore Tiger Safari",
+          "image": "/images/safari.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Rajasthan Tour Packages",
+      "location": "Rajasthan",
+      "price": 15000,
+      "image": "https://lp-cms-production.imgix.net/2024-09/shutterstockRF297625991.jpg?auto=format,compress&q=72&fit=crop&w=1200",
+      "description": "Rajasthan are its havelis, palaces and forts that add to the experience of exploring one of the historically wealthy states in India.",
+      "stayDays": 2,
+      "places": [
+        {
+          "name": "Hawa Mahal",
+          "image": "/images/hawamahal.jpeg"
+        },
+        {
+          "name": "Jaigarh",
+          "image": "/images/jaigarh.jpeg"
+        },
+        {
+          "name": "Jaipur",
+          "image": "/images/jaipur.jpeg"
+        },
+        {
+          "name": "Amer Fort",
+          "image": "/images/amerfort.jpeg"
+        },
+        {
+          "name": "Jodhpur camel safari",
+          "image": "/images/jodhpur.avif"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Ladkh Tour Packages",
+      "location": "Ladakh",
+      "price": 13000,
+      "image": "https://lp-cms-production.imgix.net/2023-11/GettyImages-1046313926.jpg?auto=format,compress&q=72&fit=crop&w=1200",
+      "description": " Ladakh is an absolute delight for nature lovers as well as adventurers. Adorned with the lofty barren mountains, Ladakh is home to some of the highest motorable passes",
+      "stayDays": 3,
+      "places": [
+        {
+          "name": "Leh Palace",
+          "image": "/images/lehpalace.jpeg"
+        },
+        {
+          "name": "Shanti stupa",
+          "image": "/images/shantistupa.jpeg"
+        },
+        {
+          "name": "Pangong lake",
+          "image": "/images/pangong.jpeg"
+        },
+        {
+          "name": "Zanskar valley",
+          "image": "/images/zanskar.jpeg"
+        },
+        {
+          "name": "Kargil",
+          "image": "/images/kargil.jpg"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Madhya Pradesh Tour Packages",
+      "location": "Madhya Pradesh",
+      "price": 10000,
+      "image": "https://lp-cms-production.imgix.net/2024-04/GettyImages-1828082685.jpg?auto=format,compress&q=72&fit=crop&w=1200",
+      "description": "Madhya Pradesh, the 'Heart of India,' through the Gwalior, Orchha, and Khajuraho itinerary, featuring rich heritage, iconic temples, forts, and vibrant wildlife.",
+      "stayDays": 4,
+      "places": [
+        {
+          "name": "Pachmarhi",
+          "image": "/images/pachmarhi.jpg"
+        },
+        {
+          "name": "Sanchi",
+          "image": "/images/sanchi.jpg"
+        },
+        {
+          "name": "Ujjain",
+          "image": "/images/ujjain.jpg"
+        },
+        {
+          "name": "Khajuraho",
+          "image": "/images/khajurahao.jpg"
+        },
+        {
+          "name": "Orchha Fort",
+          "image": "/images/orchha.jpg"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Amritsar Tour Packages",
+      "location": "Amritsar",
+      "price": 20000,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.oQVpr86efuKFAsnSmzSw4wHaE8?pid=Api&P=0&h=220",
+      "description": "The tour of Amritsar will help you to experience the richness of Sikh history and culture by visiting heritage sites of the city.",
+      "stayDays": 5,
+      "places": [
+        {
+          "name": "Wagah Border",
+          "image": "/images/wagah.jpeg"
+        },
+        {
+          "name": "Jallian wala Bagh",
+          "image": "/images/jallian.png"
+        },
+        {
+          "name": "Golden Temple",
+          "image": "/images/goldentemple.jpg"
+        },
+        {
+          "name": "Durgiana Temple",
+          "image": "/images/durgiana.jpg"
+        },
+        {
+          "name": "Partition museum",
+          "image": "/images/museum.jpg"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Delhi Tour Packages",
+      "location": "Delhi",
+      "price": 15000,
+      "image": "https://tse4.mm.bing.net/th/id/OIP.dB8TiI3Vu-aYiI6zATIKDQHaEp?pid=Api&P=0&h=220",
+      "description": "Delhi is basically a cosmopolitan city that holds people of all languages, culture and faith making it rich in cultural diversity. ",
+      "stayDays": 4,
+      "places": [
+        {
+          "name": "Lotus Temple",
+          "image": "/images/lotus.jpeg"
+        },
+        {
+          "name": "India Gate",
+          "image": "/images/indaigate.jpg"
+        },
+        {
+          "name": "Red Fort",
+          "image": "/images/redfort.jpeg"
+        },
+        {
+          "name": "Qutub Minar",
+          "image": "/images/qutubminar.jpg"
+        },
+        {
+          "name": "National Ralway Museum",
+          "image": "/images/railway museum.jpg"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Meghalaya Tour Packages",
+      "location": "Meghalaya",
+      "price": 25000,
+      "image": "https://tse2.mm.bing.net/th?id=OIP.n9f53jh6W5YtIJNZJXG-aAHaE8&pid=Api&P=0&h=220",
+      "description": "Meghalaya, often called “the Abode of Clouds,” is known for its misty landscapes, lush greenery, and abundant.",
+      "stayDays": 4,
+      "places": [
+        {
+          "name": "Umiam Lake",
+          "image": "/images/umiam.jpeg"
+        },
+        {
+          "name": "Shillong",
+          "image": "/images/shillong.jpg"
+        },
+        {
+          "name": "Mawsynram",
+          "image": "/images/mawsyndram.jpg"
+        },
+        {
+          "name": "Cherrapunjee",
+          "image": "/images/cheerabunji.jpg"
+        },
+        {
+          "name": "Sohra falls",
+          "image": "/images/sohra.jpg"
+        }
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1751013062932",
+      "userId": "759",
+      "username": "thanu",
+      "tourId": "3",
+      "tourName": "Kerala Backwaters",
+      "date": "2025-07-04",
+      "people": 3
+    },
+    {
+      "id": "1751091307022",
+      "userId": "759",
+      "username": "thanu",
+      "tourId": "2",
+      "tourName": "Manali Adventure Trip",
+      "date": "2025-06-30",
+      "people": 3
+    },
+    {
+      "id": "1751173884708",
+      "userId": "6360",
+      "tourId": "3",
+      "tourName": "Kerala Tours",
+      "date": "2025-07-03",
+      "people": 3
+    },
+    {
+      "id": "1751174582547",
+      "userId": "6360",
+      "tourId": "2",
+      "tourName": "Manali Tours",
+      "date": "2025-07-03",
+      "people": 3
+    },
+    {
+      "id": "1751174842713",
+      "userId": "6360",
+      "tourId": "1",
+      "tourName": "Goa Tours",
+      "date": "2025-07-01",
+      "people": 3
+    },
+    {
+      "id": "1751174950248",
+      "userId": "6c22",
+      "tourId": "1",
+      "tourName": "Goa Tours",
+      "date": "2025-07-11",
+      "people": 3
+    },
+    {
+      "id": "1751175335515",
+      "userId": "1c7e",
+      "tourId": "5",
+      "tourName": "Mysore Tours",
+      "date": "2025-07-02",
+      "people": 2
+    },
+    {
+      "id": "1751175885235",
+      "userId": "b24b",
+      "tourId": "3",
+      "tourName": "Alleppey Tours",
+      "date": "2025-07-03",
+      "people": 3
+    },
+    {
+      "id": "1751220644527",
+      "userId": "109a",
+      "tourId": "3",
+      "tourName": "Alleppey Tours",
+      "date": "2025-07-02",
+      "people": 2
+    },
+    {
+      "id": "1751268483898",
+      "userId": "u4",
+      "username": "arul kumar",
+      "tourId": "2",
+      "tourName": "Manali Tour Packages",
+      "date": "2025-07-02",
+      "people": 3,
+      "stayDays": 4,
+      "totalPrice": 144000
+    },
+    {
+      "id": "1754631009534",
+      "userId": "u2",
+      "username": "sasiarul",
+      "tourId": "1",
+      "tourName": "Goa Tour Packages",
+      "date": "2025-08-14",
+      "people": 3,
+      "stayDays": 3,
+      "totalPrice": 180000
+    },
+    {
+      "id": "1754631129486",
+      "userId": "u2",
+      "username": "sasiarul",
+      "tourId": "3",
+      "tourName": "Alleppey Tour Packages",
+      "date": "2025-08-27",
+      "people": 3,
+      "stayDays": 3,
+      "totalPrice": 90000
+    },
+    {
+      "id": "1755355231269",
+      "tourId": "1",
+      "tourName": "Goa Tour Packages",
+      "date": "2025-08-21",
+      "people": 4,
+      "stayDays": 3,
+      "totalPrice": 240000
+    },
+    {
+      "id": "1755355358570",
+      "tourId": "3",
+      "tourName": "Alleppey Tour Packages",
+      "date": "2025-08-26",
+      "people": 3,
+      "stayDays": 3,
+      "totalPrice": 90000
+    },
+    {
+      "id": 1758606716814,
+      "userId": "u1",
+      "tourId": "4",
+      "tourName": "Gulmarg Tour Packages",
+      "date": "2025-10-03",
+      "people": 3,
+      "stayDays": 4,
+      "totalPrice": 300000
+    },
+    {
+      "id": 1758610301690,
+      "userId": "u1",
+      "tourId": "2",
+      "tourName": "Manali Tour Packages",
+      "date": "2025-10-02",
+      "people": 3,
+      "stayDays": 4,
+      "totalPrice": 144000
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+body {
+  background: linear-gradient(to bottom right, #fefae0, #faedcd);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.tour-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== Main Tour Image Slider ===== */
+.main-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  border-radius: 15px;
+}
+
+.main-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+.main-slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ===== Tour Content ===== */
+.tour-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tour-price {
+  font-size: 1.5rem;
+  color: #d35400;
+  margin-top: 10px;
+}
+
+.book-now-button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  width: 250px;
+  max-width: 100%;
+  transition: background 0.3s ease;
+}
+
+.book-now-button:hover {
+  background: #219150;
+}
+
+/* ===== Places Slider ===== */
+.place-slider {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-slider h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.slider-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.slide p {
+  padding: 10px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 768px) {
+  /* Main images: vertical list */
+  .main-slider {
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 10px;
+  }
+  .main-slide {
+    flex: none;
+  }
+  .main-slide img {
+    height: auto;
+  }
+
+  /* Places: vertical list */
+  .slider-wrapper {
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 10px;
+  }
+  .slide {
+    width: 100%;
+  }
+  .slide img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tour-price {
+    font-size: 1.2rem;
+  }
+}

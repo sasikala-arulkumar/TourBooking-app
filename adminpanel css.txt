@@ -1,0 +1,29 @@
+.admin-container {
+  padding: 2rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-table button {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.tour-form input,
+.tour-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
