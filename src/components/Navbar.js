@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import Logout from './LogOut';
 import './Navbar.css';
 
