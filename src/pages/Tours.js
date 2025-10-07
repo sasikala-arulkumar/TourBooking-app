@@ -1,35 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// // Inside Tours.js
-// import TourCard from '../components/TourCard'; // ✅ Correct
-
-// import axios from 'axios';
-// import './Tours.css'; // if needed for background or layout
-
-// const Tours = () => {
-//   const [tours, setTours] = useState([]);
-
-//   useEffect(() => {
-//     axios.get('http://localhost:3500/tours')
-//       .then((res) => setTours(res.data))
-//       .catch((err) => console.error(err));
-//   }, []);
-
-//   return (
-//   <div className="tour-container">
-//     <h2>Destinations</h2>
-//     <div className="tour-grid">
-//       {tours.length === 0 ? (
-//         <p className="tour-loading">Loading tour list...</p>
-//       ) : (
-//         tours.map((tour) => <TourCard key={tour.id} tour={tour} />)
-//       )}
-//     </div>
-//   </div>
-// );
-
-// };
-
-// export default Tours;
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import TourCard from '../components/TourCard';
@@ -64,35 +32,14 @@ const Tours = () => {
   return (
     <div className="tour-container">
       <h2>Destinations</h2>
-
-      
-      {/* <input
+    <div className="tour-filters">
+      <input
         type="text"
         placeholder="Search by location..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="tour-search-input"
       />
-
-      
-      <select
-        value={sortOrder}
-        onChange={(e) => setSortOrder(e.target.value)}
-        className="tour-price-dropdown"
-      >
-        <option value="default">Sort by Price</option>
-        <option value="lowtohigh">Low to High</option>
-        <option value="hightolow">High to Low</option>
-      </select> */}
-<div className="tour-filters">
-  <input
-    type="text"
-    placeholder="Search by location..."
-    value={searchTerm}
-    onChange={(e) => setSearchTerm(e.target.value)}
-    className="tour-search-input"
-  />
-
   <select
     value={sortOrder}
     onChange={(e) => setSortOrder(e.target.value)}

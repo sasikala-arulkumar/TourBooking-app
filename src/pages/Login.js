@@ -37,14 +37,6 @@ const Login = () => {
 } else {
   toast.error('Invalid credentials');
 }
-
-      // if (res.data.length > 0) {
-      //   localStorage.setItem('user', JSON.stringify(res.data[0]));
-      //   toast.success("Login successful!");
-      //   setTimeout(() => navigate('/tours'), 1500); // wait for toast
-      // } else {
-      //   toast.error('Invalid credentials');
-      // }
     } catch (error) {
       toast.error('Login failed. Try again.');
     }

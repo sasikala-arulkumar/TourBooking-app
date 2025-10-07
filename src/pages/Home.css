@@ -1,9 +1,9 @@
 /* Container for the video section */
 .home-video-section {
+  height:100vh;
   position: relative;
-  height:87vh;
-  width: 100%;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 /* Background video styling */
@@ -14,7 +14,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  object-position: center;
+  display: block;
+  z-index: 1;
 }
 
 /* Overlay content (text/button) */
